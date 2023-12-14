@@ -33,7 +33,7 @@ Repositório feito para adicionar códigos typescript
 * IMPORTANTE: instalar a dedendência ts-node-dev com o comando `npm i ts-node-dev -D`
 * Após instalar, rodar o comando `npx ts-node-dev app.ts`
 
-### Atualizar app.ts sempre que houver uma alteração
+# Comando para atualizar o `app.ts` sempre que houver uma alteração
 ### `npx ts-node-dev --respawn app.ts`
 
 # Executar o projeto após fazer as configurações no package.json
