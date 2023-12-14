@@ -35,3 +35,6 @@ Repositório feito para adicionar códigos typescript
 
 ### Atualizar app.ts sempre que houver uma alteração
 ### `npx ts-node-dev --respawn app.ts`
+
+# Executar o projeto após fazer as configurações no package.json
+### `npm run start`
