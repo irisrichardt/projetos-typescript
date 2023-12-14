@@ -28,3 +28,10 @@ Repositório feito para adicionar códigos typescript
 ### Executar um arquivo utilizando node
 ### `node ./dist/app.js`
 * IMPORTANTE: sempre executar o arquivo gerado dentro da pasta `dist`
+
+# Executar diretamente um arquivo node ts
+* IMPORTANTE: instalar a dedendência ts-node-dev com o comando `npm i ts-node-dev -D`
+* Após instalar, rodar o comando `npx ts-node-dev app.ts`
+
+### Atualizar app.ts sempre que houver uma alteração
+### `npx ts-node-dev --respawn app.ts`
