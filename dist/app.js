@@ -27,3 +27,22 @@ function array() {
     console.log(array3);
 }
 // array();
+// -----------------------  ARRAYS COM TYPE -----------------------
+function arrayType() {
+    let a = [1, 2, 3, "exemplo"];
+    let b = ["exemplo", "exemplo", 5, 10, 15];
+    console.log(a, b);
+}
+// arrayType();
+// -----------------------  OBJETOS -----------------------
+function obj() {
+    let cachorro;
+    cachorro = {
+        nome: "Tom",
+        idade: 2
+    };
+    console.log(cachorro);
+    let gata = { nome: "Sarita" };
+    console.log(gata);
+}
+obj();
