@@ -1,9 +1,13 @@
-let nome: string;
-let sobrenome: string;
-let idade: number;
+let nome = "Íris"
+let idade = 24;
+let maiorIdade = true;
 
-nome = "iris"
-sobrenome = "balk"
-idade = 24;
+function somar(valor1: number, valor2: number) {
+  return console.log("Soma:", valor1 + valor2);
+}
 
-console.log(`Nome: ${nome} ${sobrenome}, idade: ${idade}`);
+console.log(nome)
+console.log(idade)
+console.log(maiorIdade)
+
+somar(5, 5)

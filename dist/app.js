@@ -1,8 +1,11 @@
 "use strict";
-let nome;
-let sobrenome;
-let idade;
-nome = "iris";
-sobrenome = "balk";
-idade = 24;
-console.log(`Nome: ${nome} ${sobrenome}, idade: ${idade}`);
+let nome = "Íris";
+let idade = 24;
+let maiorIdade = true;
+function somar(valor1, valor2) {
+    return console.log("Soma:", valor1 + valor2);
+}
+console.log(nome);
+console.log(idade);
+console.log(maiorIdade);
+somar(5, 5);
