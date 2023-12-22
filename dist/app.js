@@ -66,6 +66,37 @@ function checarStatus(status) {
             break;
     }
 }
-checarStatus(1);
-checarStatus(produtoStatus.Indisponivel);
+// checarStatus(1)
+// checarStatus(produtoStatus.Indisponivel)
 // checarStatus(3)
+function interfaceCarro() {
+    let carro = {
+        marca: "Ford",
+        modelo: "F250",
+        ligado: false,
+        velocidade: 0,
+        ligar() {
+            this.ligado = true;
+            return console.log(`O carro ${this.modelo} está ligado!`);
+        },
+        acelerar() {
+            this.velocidade += 10;
+            return console.log(`Você está acelerando. Velocidade atual: ${this.velocidade}`);
+        },
+        frear() {
+            this.velocidade -= 10;
+            return console.log(`Você está freando. Velocidade atual: ${this.velocidade}`);
+        },
+        desligar() {
+            this.velocidade = 0;
+            this.ligado = false;
+            return console.log(`Carro ${this.modelo} está ${this.ligado} (desligado). Velocidade atual: ${this.velocidade}`);
+        },
+    };
+    carro.ligar();
+    carro.acelerar();
+    carro.acelerar();
+    carro.frear();
+    carro.desligar();
+}
+// interfaceCarro();
