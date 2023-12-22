@@ -65,4 +65,30 @@ function obj() {
   console.log(gata);
 }
 
-obj();
+// obj();
+
+// ----------------------- ENUM -----------------------
+enum produtoStatus {
+  Disponivel = 1,
+  Indisponivel = 2,
+  Nao_Existe = 3
+}
+
+function checarStatus(status: number) {
+  switch (status) {
+    case produtoStatus.Disponivel:
+      console.log('Produto disponível');
+      break;
+    case produtoStatus.Indisponivel:
+      console.log('Produto indisponível');
+      break;
+    case produtoStatus.Nao_Existe:
+      console.log('Produto não existe');
+      break;
+  }
+}
+
+checarStatus(1)
+checarStatus(produtoStatus.Indisponivel)
+// checarStatus(3)
+

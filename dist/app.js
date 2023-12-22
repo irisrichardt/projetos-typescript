@@ -45,4 +45,27 @@ function obj() {
     let gata = { nome: "Sarita" };
     console.log(gata);
 }
-obj();
+// obj();
+// ----------------------- ENUM -----------------------
+var produtoStatus;
+(function (produtoStatus) {
+    produtoStatus[produtoStatus["Disponivel"] = 1] = "Disponivel";
+    produtoStatus[produtoStatus["Indisponivel"] = 2] = "Indisponivel";
+    produtoStatus[produtoStatus["Nao_Existe"] = 3] = "Nao_Existe";
+})(produtoStatus || (produtoStatus = {}));
+function checarStatus(status) {
+    switch (status) {
+        case produtoStatus.Disponivel:
+            console.log('Produto disponível');
+            break;
+        case produtoStatus.Indisponivel:
+            console.log('Produto indisponível');
+            break;
+        case produtoStatus.Nao_Existe:
+            console.log('Produto não existe');
+            break;
+    }
+}
+checarStatus(1);
+checarStatus(produtoStatus.Indisponivel);
+// checarStatus(3)
